@@ -1,6 +1,6 @@
 export default {
   '/': 'Inicio',
-  '/informacoes': 'Informações',
+  '/informacoes': 'Informacoes',
   '/chuvas': 'Chuvas',
   '/graficos': 'Graficos',
   '/mapa': 'Mapa'

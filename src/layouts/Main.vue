@@ -9,8 +9,8 @@
     <div class="divisao">
       <br><br>
     <div class="container">
-      <ul>
-        <li>
+      <ul class="navli">
+        <li class="navbar">
           <v-link class="vlink" href="/">Inicio</v-link>
           <v-link class="vlink" href="/informacoes">Informações</v-link>
           <v-link class="vlink" href="/chuvas">Chuvas</v-link>
@@ -20,7 +20,7 @@
       </ul>
     </div>
       <div class="right-div">
-        <painelInformacoes/>
+        <slot></slot>
       </div>
     </div>
   </div>
@@ -98,5 +98,16 @@ import locaisMeteorologia from '../components/locais-meteorologia.vue'
     justify-content: space-between;
     flex: 1 1 70%;
     margin-right: 20px;
+  }
+  .vlink {
+    background-color: rgb(112, 60, 18);
+    border-radius: 5px;
+    border-color: black;
+  }
+  .navbar{
+  }
+  .navli {
+    list-style:none;
+    display:inline;
   }
 </style>

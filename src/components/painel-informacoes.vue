@@ -35,10 +35,10 @@ padding-top: 30px;
 
 .square {
   width: 100%;
-  height: 0;
   padding-bottom: 100%;
   background-image: radial-gradient(rgb(238, 215, 173), rgb(151, 98, 0));
-  margin: 20px 0;
   border-radius: 5px;
+  margin: 2px;
+  border: 2px solid black;
 }
 </style>

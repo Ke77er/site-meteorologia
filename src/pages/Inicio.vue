@@ -1,15 +1,17 @@
 <template>
   <main-layout>
-    <p>Welcome home</p>
+    <painelInformacoes/>
   </main-layout>
 </template>
 
 <script>
   import MainLayout from '../layouts/Main.vue'
+  import painelInformacoes from '../components/painel-informacoes.vue'
 
   export default {
     components: {
-      MainLayout
+      MainLayout,
+      painelInformacoes
     }
   }
 </script>
