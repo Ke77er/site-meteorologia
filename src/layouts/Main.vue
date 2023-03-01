@@ -1,0 +1,102 @@
+<template>
+  <div class="wrapper">
+    <div class="search-container">
+      <input type="text" placeholder="Pesquisar" v-model="filtro" @input="filtrarCidades">
+      <div class="left-div">
+        <locaisMeteorologia :filtro="filtro"/>
+      </div>
+    </div>
+    <div class="divisao">
+      <br><br>
+    <div class="container">
+      <ul>
+        <li>
+          <v-link class="vlink" href="/">Inicio</v-link>
+          <v-link class="vlink" href="/informacoes">Informações</v-link>
+          <v-link class="vlink" href="/chuvas">Chuvas</v-link>
+          <v-link class="vlink" href="/graficos">Graficos</v-link>
+          <v-link class="vlink" href="/mapa">Mapa</v-link>
+        </li>
+      </ul>
+    </div>
+      <div class="right-div">
+        <painelInformacoes/>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import painelInformacoes from '../components/painel-informacoes.vue'
+import locaisMeteorologia from '../components/locais-meteorologia.vue'
+  import VLink from '../components/VLink.vue'
+
+  export default {
+    components: {
+      VLink,
+      painelInformacoes,
+      locaisMeteorologia,
+    },
+  data() {
+    return {
+      filtro: '',
+    }
+  },
+  methods: {
+    filtrarCidades() {
+      // chamada de método vazia para acionar a atualização da lista de cidades no componente "locaisMeteorologia"
+    }
+  }
+}
+</script>
+
+<style scoped>
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 93vh; 
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-image: radial-gradient(rgb(238, 215, 173), rgb(151, 98, 0));
+  }
+  .divisao{
+    width: 69%;
+    display: inline-block;
+  }
+  .search-container {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+  }
+  .search-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  .left-div {
+    height: 654px;
+    background-image: radial-gradient(rgb(238, 215, 173), rgb(151, 98, 0));
+    margin-top: 30px;
+    overflow-y: auto;
+    border-radius: 5px;
+  }
+  .right-div {
+    flex: 1 1 100%;
+    height: 600px;
+    background-image: radial-gradient(rgb(238, 215, 173), rgb(151, 98, 0));
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  .container {
+    text-align: center;
+    justify-content: space-between;
+    flex: 1 1 70%;
+    margin-right: 20px;
+  }
+</style>
