@@ -22,13 +22,15 @@
       <div class="right-div">
         <slot></slot>
       </div>
+      <footer>Rodapé da Div</footer>
     </div>
   </div>
 </template>
 
 <script>
-import painelInformacoes from '../components/painel-informacoes.vue'
+import painelInformacoes from '../components/inicio/inicio-informacoes.vue'
 import locaisMeteorologia from '../components/locais-meteorologia.vue'
+import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
   import VLink from '../components/VLink.vue'
 
   export default {
@@ -36,6 +38,8 @@ import locaisMeteorologia from '../components/locais-meteorologia.vue'
       VLink,
       painelInformacoes,
       locaisMeteorologia,
+      historicoChuvas
+      
     },
   data() {
     return {
@@ -88,7 +92,7 @@ import locaisMeteorologia from '../components/locais-meteorologia.vue'
   }
   .right-div {
     flex: 1 1 100%;
-    height: 600px;
+    height: 564px;
     background-image: radial-gradient(rgb(238, 215, 173), rgb(151, 98, 0));
     margin-top: 30px;
     border-radius: 5px;
@@ -100,14 +104,23 @@ import locaisMeteorologia from '../components/locais-meteorologia.vue'
     margin-right: 20px;
   }
   .vlink {
-    background-color: rgb(112, 60, 18);
+    border: 2px solid black;
     border-radius: 5px;
     border-color: black;
-  }
-  .navbar{
+    margin: auto;
   }
   .navli {
     list-style:none;
     display:inline;
   }
+  footer {
+    position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  width: 971px;
+  background-color: #44321b;
+  text-align: center;
+}
 </style>

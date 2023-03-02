@@ -6,7 +6,7 @@
 
 <script>
   import MainLayout from '../layouts/Main.vue'
-  import painelInformacoes from '../components/painel-informacoes.vue'
+  import painelInformacoes from '../components/inicio/inicio-informacoes.vue'
 
   export default {
     components: {
