@@ -1,16 +1,28 @@
 <template>
         <div class="containerinf">
   <div class="column">
-    <div class="square">Temperatura</div>
-    <div class="square">Umidade</div>
+    <div class="square">
+      <img src="src\icons\termometro.png" alt="">
+    </div>
+    <div class="square">
+      <img src="src\icons\gotas.png" alt="">
+      Umidade</div>
   </div>
   <div class="column">
-    <div class="square">Sensação térmica</div>
-    <div class="square">Vento Km/h</div>
+    <div class="square">
+      <img src="src\icons\termico.png" alt="">
+      Sensação térmica</div>
+    <div class="square">
+      <img src="src\icons\ventoso.png" alt="">
+      Vento Km/h</div>
   </div>
   <div class="column">
-    <div class="square">Chuva (mm)</div>
-    <div class="square">Ponto de Orvalho</div>
+    <div class="square">
+      <img src="src\icons\chuva-leve.png" alt="">
+      Chuva (mm)</div>
+    <div class="square">
+      <img src="src\icons\folha.png" alt="">
+      Ponto de Orvalho</div>
   </div>
 </div>
 </template>
@@ -22,6 +34,11 @@ export default {
 </script>
 
 <style>
+img {
+  width: 40px;
+  height: 40px;
+}
+
 .containerinf {
   display: flex;
   justify-content: space-between;
@@ -38,7 +55,7 @@ padding-top: 30px;
   padding-bottom: 100%;
   background-image: radial-gradient(rgb(238, 215, 173), rgb(151, 98, 0));
   border-radius: 5px;
-  margin: 2px;
+  margin: 5px;
   border: 2px solid black;
 }
 </style>
