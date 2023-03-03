@@ -8,17 +8,15 @@
     </div>
     <div class="divisao">
       <br><br>
-    <div class="container">
-      <ul class="navli">
-        <li class="navbar">
-          <v-link class="vlink" href="/">Inicio</v-link>
-          <v-link class="vlink" href="/informacoes">Informações</v-link>
-          <v-link class="vlink" href="/chuvas">Chuvas</v-link>
-          <v-link class="vlink" href="/graficos">Graficos</v-link>
-          <v-link class="vlink" href="/mapa">Mapa</v-link>
-        </li>
-      </ul>
-    </div>
+      <nav class="container">
+  <ul class="navul">
+    <li class="navli"><v-link class="vlink" href="/">Inicio</v-link></li>
+    <li class="navli"><v-link class="vlink" href="/informacoes">Informações</v-link></li>
+    <li class="navli"><v-link class="vlink" href="/chuvas">Chuvas</v-link></li>
+    <li class="navli"><v-link class="vlink" href="/graficos">Graficos</v-link></li>
+    <li class="navli"><v-link class="vlink" href="/mapa">Mapa</v-link></li>
+  </ul>
+</nav>
       <div class="right-div">
         <slot></slot>
       </div>
@@ -98,21 +96,29 @@ import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
     border-radius: 5px;
   }
   .container {
-    text-align: center;
-    justify-content: space-between;
-    flex: 1 1 70%;
-    margin-right: 20px;
+  display: flex;
+  justify-content: center;
   }
   .vlink {
-    border: 2px solid black;
-    border-radius: 5px;
-    border-color: black;
-    margin: auto;
+    color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
   }
-  .navli {
-    list-style:none;
-    display:inline;
+  .navbar {
+    margin: 0 10px;
   }
+
+  .navul {
+    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  max-width: 960px;
+  width: 100%;
+  }
+  
   footer {
     position: relative;
   bottom: 0;

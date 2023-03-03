@@ -1,5 +1,5 @@
 <template>
-        <div class="container">
+        <div class="containerinf">
   <div class="column">
     <div class="square">Temperatura</div>
     <div class="square">Umidade</div>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style>
-.container {
+.containerinf {
   display: flex;
   justify-content: space-between;
 }
