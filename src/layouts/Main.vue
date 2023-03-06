@@ -58,7 +58,7 @@ import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 100%;
-    height: 93vh; 
+    height: 100%; 
     margin: 0 auto;
     padding: 15px 30px;
     background-image: radial-gradient(rgb(238, 215, 173), rgb(151, 98, 0));
@@ -90,7 +90,7 @@ import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
   }
   .right-div {
     flex: 1 1 100%;
-    height: 564px;
+    height: auto;
     background-image: radial-gradient(rgb(238, 215, 173), rgb(151, 98, 0));
     margin-top: 30px;
     border-radius: 5px;
@@ -124,7 +124,7 @@ import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px;
+  height: 30px;
   width: 971px;
   background-color: #44321b;
   text-align: center;

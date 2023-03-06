@@ -50,3 +50,9 @@ export default {
   }
 }
 </script>
+<style>
+.list-group {
+  max-height: 310px;
+  overflow-y: auto;
+}
+</style>

@@ -3,7 +3,6 @@
       <div class="map">mapa</div>
     </main-layout>
   </template>
-  
   <script>
     import MainLayout from '../layouts/Main.vue'
     export default {
