@@ -2,8 +2,9 @@
   <div class="wrapper">
     <div class="search-cont">
       <input type="text" placeholder="Pesquisar" v-model="filtro" @input="filtrarCidades">
+      <button @click="adicionarCidade">Adicionar cidade</button>
       <div class="left-div">
-        <locaisMeteorologia :filtro="filtro"/>
+        <locaisMeteorologia :filtro="filtro" :cidades="cidades" @adicionar-cidade="adicionarCidade"/>
       </div>
     </div>
     <div class="divisao">
@@ -42,12 +43,20 @@ import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
   data() {
     return {
       filtro: '',
+      cidades: ['Rio de Janeiro', 'Rio Grande', 'Rio Grande do Norte', 'Panambi', 'Goias', 'Sergipe', 'Maceió', 'São Paulo', 'Belo Horizonte', 'Brasília', 'Salvador', 'Recife', 'Fortaleza', 'Curitiba', 'Porto Alegre', 'Manaus'],
     }
   },
   methods: {
     filtrarCidades() {
       // chamada de método vazia para acionar a atualização da lista de cidades no componente "locaisMeteorologia"
-    }
+    },
+    
+    adicionarCidade() {
+  const novaCidade = prompt('Digite o nome da nova cidade:');
+  if (novaCidade) {
+    this.$emit('adicionar-cidade', novaCidade);
+  }
+},
   }
 }
 </script>

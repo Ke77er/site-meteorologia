@@ -16,11 +16,14 @@
       type: String,
       default: '',
     },
+    cidades: {
+      type: Array,
+      default: () => [],
+    },
   },
     data() {
       return {
-        cidades: ['Rio de Janeiro', 'Rio Grande', 'Rio Grande do Norte', 'Panambi', 'Goias', 'Sergipe', 'Maceió', 'São Paulo', 'Belo Horizonte', 'Brasília', 'Salvador', 'Recife', 'Fortaleza', 'Curitiba', 'Porto Alegre', 'Manaus'],
-        indicesExpandidos: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        indicesExpandidos: Array(this.cidades.length).fill(1),
       }
     },
     computed: {
@@ -40,6 +43,9 @@
       if (confirm(`Deseja realmente excluir ${this.cidades[index]}?`)) {
         this.cidades.splice(index, 1);
       }
+    },
+    adicionarCidade(novaCidade) {
+      this.cidades.push(novaCidade);
     },
   },
   }
