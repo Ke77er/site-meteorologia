@@ -1,14 +1,12 @@
 <template>
-    <div class="cidades-cont">
-      
-      <button v-for="(cidade, index) in cidadesFiltradas" :key="cidade" class="cidades">
-  {{ cidade }}
-  <div v-if="index === 0">1/3</div>
-</button>
-    </div>
-  </template>
-  
-  <script>
+  <div class="cidades-cont">
+    <button v-for="(cidade, index) in cidadesFiltradas" :key="cidade" class="cidades">
+      {{ cidade }}
+    <span>1/3</span>
+    </button>
+  </div>
+</template>
+<script>
   export default {
     name: 'locaisMeteorologia',
     props: {
@@ -29,18 +27,23 @@
     }
   },
 }
-  </script>
-
-  <style>
+</script>
+<style>
   .cidades-cont {
-  height: 100%;
-}
+    height: 100%;
+  }
+  .cidades span {
+    margin-left: auto;
+  }
   .cidades{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
     border-radius: 5px;
     width: 100%;
     height: 50px;
     padding: 5px;
     background-image: radial-gradient(rgb(238, 215, 173),orange);
   }
-
 </style>
