@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="search-container">
+    <div class="search-cont">
       <input type="text" placeholder="Pesquisar" v-model="filtro" @input="filtrarCidades">
       <div class="left-div">
         <locaisMeteorologia :filtro="filtro"/>
@@ -8,7 +8,7 @@
     </div>
     <div class="divisao">
       <br><br>
-      <nav class="container">
+      <nav class="cont">
   <ul class="navul">
     <li class="navli"><v-link class="vlink" href="/">Inicio</v-link></li>
     <li class="navli"><v-link class="vlink" href="/informacoes">Informações</v-link></li>
@@ -67,12 +67,12 @@ import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
     width: 69%;
     display: inline-block;
   }
-  .search-container {
+  .search-cont {
     width: 29%;
     display: flex;
     flex-direction: column;
   }
-  .search-container input {
+  .search-cont input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -95,7 +95,7 @@ import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
     margin-top: 30px;
     border-radius: 5px;
   }
-  .container {
+  .cont {
   display: flex;
   justify-content: center;
   }

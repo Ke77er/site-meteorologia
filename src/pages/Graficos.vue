@@ -1,15 +1,17 @@
 <template>
   <main-layout>
-    <p>Graficos</p>
+    <Comments />
   </main-layout>
 </template>
 
 <script>
   import MainLayout from '../layouts/Main.vue'
+  import Comments from '../components/graficos/comments.vue'
 
   export default {
     components: {
-      MainLayout
+      MainLayout,
+      Comments
     }
   }
 </script>

@@ -1,7 +1,10 @@
 <template>
-    <div class="cidades-container">
+    <div class="cidades-cont">
       
-      <button v-for="cidade in cidadesFiltradas" :key="cidade" class="cidades">{{ cidade }}</button>
+      <button v-for="(cidade, index) in cidadesFiltradas" :key="cidade" class="cidades">
+  {{ cidade }}
+  <div v-if="index === 0">1/3</div>
+</button>
     </div>
   </template>
   
@@ -29,7 +32,7 @@
   </script>
 
   <style>
-  .cidades-container {
+  .cidades-cont {
   height: 100%;
 }
   .cidades{
