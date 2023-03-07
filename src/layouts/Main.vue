@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="search-cont">
       <input type="text" placeholder="Pesquisar" v-model="filtro" @input="filtrarCidades">
-      <button @click="adicionarCidade">Adicionar cidade</button>
+      <!-- <button @click="adicionarCidade">Adicionar cidade</button> -->
       <div class="left-div">
         <locaisMeteorologia :filtro="filtro" :cidades="cidades" @adicionar-cidade="adicionarCidade"/>
       </div>
@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import painelInformacoes from '../components/inicio/inicio-informacoes.vue'
-import locaisMeteorologia from '../components/locais-meteorologia.vue'
+import painelInformacoes from '../components/informacoes/painel-informacoes.vue'
+import locaisMeteorologia from '../components/lista-unidades.vue'
 import historicoChuvas from '../components/chuvas/chuvas-historico.vue'
   import VLink from '../components/VLink.vue'
 

@@ -1,28 +1,34 @@
 <template>
-        <div class="containerinf">
+<div class="containerinf">
   <div class="column">
     <div class="square">
       <img src="src\icons\termometro.png" alt="">
+      <p>Temperatura</p>
     </div>
     <div class="square">
       <img src="src\icons\gotas.png" alt="">
-      Umidade</div>
+      <p>Umidade</p>
+    </div>
   </div>
   <div class="column">
     <div class="square">
       <img src="src\icons\termico.png" alt="">
-      Sensação térmica</div>
+      <p>Sensação térmica</p>
+    </div>
     <div class="square">
       <img src="src\icons\ventoso.png" alt="">
-      Vento Km/h</div>
+      <p>Vento Km/h</p>
+    </div>
   </div>
   <div class="column">
     <div class="square">
       <img src="src\icons\chuva-leve.png" alt="">
-      Chuva (mm)</div>
+      <p>Chuva (mm)</p>
+    </div>
     <div class="square">
       <img src="src\icons\folha.png" alt="">
-      Ponto de Orvalho</div>
+      <p>Ponto de Orvalho</p>
+    </div>
   </div>
 </div>
 </template>
@@ -57,5 +63,9 @@ padding-top: 30px;
   border-radius: 5px;
   margin: 5px;
   border: 2px solid black;
+}
+.square img {
+  float: left;
+  margin-right: 10px;
 }
 </style>

@@ -3,8 +3,8 @@
       <button v-for="(cidade, index) in cidadesFiltradas" :key="cidade" class="cidades">
         {{ cidade }}
         <span>1/3</span>
-        <button @click="renomearCidade(index)">Editar</button>
-        <button @click="excluirCidade(index)">Excluir</button>
+        <!-- <button @click="renomearCidade(index)">Editar</button> -->
+        <!-- <button @click="excluirCidade(index)">Excluir</button> -->
       </button>
   </div>
 </template>
@@ -33,20 +33,20 @@
     }
   },
   methods: {
-    renomearCidade(index) {
-      const novaCidade = prompt('Digite o novo nome da cidade:');
-      if (novaCidade) {
-        this.cidades.splice(index, 1, novaCidade);
-      }
-    },
-    excluirCidade(index) {
-      if (confirm(`Deseja realmente excluir ${this.cidades[index]}?`)) {
-        this.cidades.splice(index, 1);
-      }
-    },
-    adicionarCidade(novaCidade) {
-      this.cidades.push(novaCidade);
-    },
+    // renomearCidade(index) {
+    //   const novaCidade = prompt('Digite o novo nome da cidade:');
+    //   if (novaCidade) {
+    //     this.cidades.splice(index, 1, novaCidade);
+    //   }
+    // },
+    // excluirCidade(index) {
+    //   if (confirm(`Deseja realmente excluir ${this.cidades[index]}?`)) {
+    //     this.cidades.splice(index, 1);
+    //   }
+    // },
+    // adicionarCidade(novaCidade) {
+    //   this.cidades.push(novaCidade);
+    // },
   },
   }
 </script>

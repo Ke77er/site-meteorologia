@@ -1,17 +1,18 @@
 <template>
   <main-layout>
-    <painelInformacoes/>
+    <painelInicio/>
   </main-layout>
 </template>
 
 <script>
   import MainLayout from '../layouts/Main.vue'
-  import painelInformacoes from '../components/inicio/inicio-informacoes.vue'
+  import painelInicio from '../components/inicio/painel-inicio.vue'
 
   export default {
     components: {
       MainLayout,
-      painelInformacoes
+      painelInicio
+      
     }
   }
 </script>
