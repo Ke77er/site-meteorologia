@@ -3,7 +3,6 @@
     <painelInicio/>
   </main-layout>
 </template>
-
 <script>
   import MainLayout from '../layouts/Main.vue'
   import painelInicio from '../components/inicio/painel-inicio.vue'
@@ -12,7 +11,6 @@
     components: {
       MainLayout,
       painelInicio
-      
     }
   }
 </script>

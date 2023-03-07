@@ -3,7 +3,6 @@
       <painelInformacoes/>
     </main-layout>
   </template>
-  
   <script>
     import MainLayout from '../layouts/Main.vue'
     import painelInformacoes from '../components/informacoes/painel-informacoes.vue'
@@ -15,4 +14,3 @@
       }
     }
   </script>
-  
