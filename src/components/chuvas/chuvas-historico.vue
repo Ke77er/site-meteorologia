@@ -6,11 +6,11 @@
 </div>
 <div class="column">
 <div class="square">Sensação térmica</div>
-<div class="square">Vento Km/h</div>
+<div class="square">VentoKm/h</div>
 </div>
 <div class="column">
-<div class="square">Chuva (mm)</div>
-<div class="square">Ponto de Orvalho</div>
+<div class="square">Chuva(mm)</div>
+<div class="square">Pontos de Orvalho</div>
 </div>
 </div>
 </template>

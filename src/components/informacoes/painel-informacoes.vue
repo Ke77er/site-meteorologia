@@ -23,11 +23,11 @@
   <div class="column">
     <div class="square">
       <img src="src\icons\chuva-leve.png" alt="">
-      <p>Chuva (mm)</p>
+      <p>Chuva(mm)</p>
     </div>
     <div class="square">
       <img src="src\icons\folha.png" alt="">
-      <p>Ponto de Orvalho</p>
+      <p>Ponto de Orvalhos</p>
     </div>
   </div>
 </div>
